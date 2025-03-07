@@ -8,4 +8,4 @@
 [[ ! -e "/mnt/app" ]] && mount -t qnx6 /dev/mnanda0t177.1 /mnt/app
 
 /mnt/app/armle/usr/bin/pc b:0x5F22:0x22AD:8.0 0    # Apple DIO
-/mnt/app/armle/usr/bin/pc b:0x5F22:0x22AD:23.3 1   # Apple DIO Wireless
+/mnt/app/armle/usr/bin/pc b:0x5F22:0x22AD:23.3 0   # Apple DIO Wireless
