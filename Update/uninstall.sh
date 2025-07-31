@@ -13,5 +13,5 @@ if [[ ! -e "/mnt/persist_new/fec/granted.fecs.bak" ]]; then
 else
     echo "granted.fecs.bak already exists; not overwriting"
 fi
-# remove (if not part of original FECs) CarPlay
-fecswap -r 00060800 -f /mnt/persist_new/fec/granted.fecs
+# remove (if not part of original FECs) AMI/USB enabled, Bluetooth, CarPlay
+fecswap -r 00030000 00050000 00060800 -f /mnt/persist_new/fec/granted.fecs
